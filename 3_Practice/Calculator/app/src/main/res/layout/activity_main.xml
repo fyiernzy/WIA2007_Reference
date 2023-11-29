@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="96/3"
+        android:textSize="30sp"
+        android:textAlignment="textEnd"
+        android:id="@+id/tvUserInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:id="@+id/tvCalculation"
+        android:textAlignment="textEnd"
+        android:text="96"
+        android:textSize="100sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <!-- Button -->
+    <LinearLayout
+        android:id="@+id/buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#F1F1F1"
+        android:paddingVertical="16dp">
+
+        <!--    First line of functions -->
+        <LinearLayout
+            style="@style/BaseButtonLineStyle">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnClear"
+                android:text="C"
+                app:cornerRadius="36dp"
+                style="@style/LightOrangeButtonStyle" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLeftParentheses"
+                android:text="("
+                app:cornerRadius="36dp"
+                style="@style/GreyButtonStyle"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRightParentheses"
+                android:text=")"
+                app:cornerRadius="36dp"
+                style="@style/GreyButtonStyle"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDiv"
+                android:text="/"
+                app:cornerRadius="36dp"
+                style="@style/OperatorButtonStyle"/>
+        </LinearLayout>
+
+        <!-- Second line of functions -->
+        <LinearLayout
+            style="@style/BaseButtonLineStyle">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSeven"
+                android:text="7"
+                app:cornerRadius="36dp"
+                style="@style/NumberButtonStyle"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEight"
+                android:text="8"
+                app:cornerRadius="36dp"
+                style="@style/NumberButtonStyle"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnNine"
+                android:text="9"
+                app:cornerRadius="36dp"
+                style="@style/NumberButtonStyle"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnMul"
+                android:text="*"
+                app:cornerRadius="36dp"
+                style="@style/OperatorButtonStyle"/>
+        </LinearLayout>
+
+        <!-- Third line of functions -->
+        <LinearLayout
+            style="@style/BaseButtonLineStyle">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnFour"
+                android:text="4"
+                app:cornerRadius="36dp"
+                style="@style/NumberButtonStyle"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnFive"
+                android:text="5"
+                app:cornerRadius="36dp"
+                style="@style/NumberButtonStyle"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSix"
+                android:text="6"
+                app:cornerRadius="36dp"
+                style="@style/NumberButtonStyle"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnPlus"
+                android:text="+"
+                app:cornerRadius="36dp"
+                style="@style/OperatorButtonStyle"/>
+        </LinearLayout>
+
+        <!-- Forth line of functions -->
+        <LinearLayout
+            style="@style/BaseButtonLineStyle">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnOne"
+                android:text="1"
+                app:cornerRadius="36dp"
+                style="@style/NumberButtonStyle"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnTwo"
+                android:text="2"
+                app:cornerRadius="36dp"
+                style="@style/NumberButtonStyle"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnThree"
+                android:text="3"
+                app:cornerRadius="36dp"
+                style="@style/NumberButtonStyle"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnMinus"
+                android:text="-"
+                app:cornerRadius="36dp"
+                style="@style/OperatorButtonStyle"/>
+        </LinearLayout>
+
+        <!-- Forth line of functions -->
+        <LinearLayout
+            style="@style/BaseButtonLineStyle">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAC"
+                android:text="AC"
+                app:cornerRadius="32dp"
+                style="@style/LightOrangeButtonStyle"
+                android:textSize="20dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnZero"
+                android:text="0"
+                app:cornerRadius="36dp"
+                style="@style/NumberButtonStyle"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDot"
+                android:text="."
+                app:cornerRadius="36dp"
+                style="@style/NumberButtonStyle"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEqual"
+                android:text="="
+                app:cornerRadius="36dp"
+                style="@style/OperatorButtonStyle"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
