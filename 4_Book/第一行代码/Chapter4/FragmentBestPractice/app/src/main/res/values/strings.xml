@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FragmentBestPractice</string>
+    <string name="title_activity_news_content">NewsContentActivity</string>
+</resources>
